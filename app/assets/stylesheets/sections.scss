@@ -59,10 +59,10 @@ $font-stack: 'Source Sans Pro', system, system-ui, -apple-system,
   &_title {
     flex-shrink: 0;
     width: 200px;
-    margin-right: 70px;
+    margin-right: 50px;
     color: $blue;
     text-transform: uppercase;
-    text-align: right;
+    text-align: center;
     font-weight: 700;
     letter-spacing: 2px;
     font-size: 1.3rem;
@@ -108,7 +108,31 @@ $font-stack: 'Source Sans Pro', system, system-ui, -apple-system,
           opacity: 1;
           transform: translateY(-2px);
         }
-        }
       }
     }
   }
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  // @include weird-medium {
+  //   flex-wrap: wrap;
+  // }
+  &_category {
+    // @include weird-medium {
+    //   width: 47%;
+    //   margin-right: 5px;
+    //   margin-bottom: 25px;
+    // }
+    &_label {
+      font-weight: 700;
+      color: $black;
+      text-transform: uppercase;
+    }
+    &_item {
+      margin: 3px 0;
+      font-size: 0.9rem;
+    }
+  }
+}
