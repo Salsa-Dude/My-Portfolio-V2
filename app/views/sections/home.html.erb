@@ -127,7 +127,7 @@
   </div>
 </div>
 
-<!-- <div class="section">
+<div class="section experience">
   <div class="container">
     <div class="row">
       <div class="col-md-3 section_title">
@@ -135,18 +135,21 @@
       </div>
       <div class="col-md-9 section_content">
         <div class="jobs">
-          {% for job in site.data.experience %}
+          <% for job in @jobs %>
           <div class="job">
             <div class="time-place">
-              <div class="job__company">
-                <a href="{{job.url}}" target="_blank">{{job.company}}</a>
+              <div class="job_company">
+                <a href="<%= job[:url] %>" target="_blank"><%= job[:company] %></a>
               </div>
-              <div class="job__time">{{job.time}}</div>
+              <div class="job_time"><%= job[:time] %></div>
             </div>
-            <div class="job__position">{{job.position}}</div>
+            <div class="job_position"><%= job[:position] %></div>
           </div>
+          <% end %>
+        </div>
+        <a href="" target="_blank" class="arrow-link">View My Resume</a>
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
