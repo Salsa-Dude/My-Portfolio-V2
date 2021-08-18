@@ -2,19 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "bootstrap";
+// @import "bootstrap";
+
+@import '_global';
 
 html {
   box-sizing: border-box;
 }
 
 
-$black: #36363c;
-$blue: #007bff;
-$white: #ffffff;
-$dark-grey: #444452;
-$font-stack: 'Source Sans Pro', system, system-ui, -apple-system,
-  BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
 
 *,
 *:before,
@@ -88,7 +84,21 @@ strong {
 
 
 .section {
-  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  padding: 100px 170px;
+  @include thirteen {
+    padding: 100px;
+  }
+  @include desktop {
+    padding: 50px;
+  }
+  @include tablet {
+    display: block;
+  }
+  @include mobile {
+    padding: 50px 35px;
+  }
   &_title {
     flex-shrink: 0;
     width: 200px;
@@ -105,13 +115,13 @@ strong {
     font-size: 1.1rem;
     width: 100%;
     max-width: 700px;
-    // @include tablet {
-    //   padding-top: 30px;
-    //   padding-left: 50px;
-    // }
-    // @include mobile {
-    //   padding-left: 30px;
-    // }
+    @include tablet {
+      padding-top: 30px;
+      padding-left: 50px;
+    }
+    @include mobile {
+      padding-left: 30px;
+    }
     p {
       margin-top: 0;
       margin-bottom: 25px;
