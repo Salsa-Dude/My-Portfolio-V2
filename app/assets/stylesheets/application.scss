@@ -13,9 +13,11 @@
  *= require_self
  */
 
- @import "./partials/_global.scss";
- @import "./partials/_base.scss";
- @import "./partials/_intro.scss";
+ @import "./partials/global.scss";
+ @import "./partials/base.scss";
+ @import "./partials/intro.scss";
  @import "./partials/skills";
+ @import "./partials/experience";
+ @import "./partials/featured-projects";
 
 
