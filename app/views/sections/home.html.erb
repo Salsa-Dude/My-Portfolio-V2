@@ -121,61 +121,29 @@
   </div>
 </section>
 
-
-<%# <div class="section">
-  <div class="container">
-  <div class="row">
-    <div class="col-md-3 section_title">
-      SKILLS
+<section class="section experience">
+  <div class="section_title">Experience</div>
+  <div class="section_content">
+    <div class="jobs">
+      <% for job in @jobs %>
+          <div class="job">
+            <div class="time-place">
+              <div class="job_company">
+                <a href="<%= job[:url] %>" target="_blank"><%= job[:company] %></a>
+              </div>
+              <div class="job_time"><%= job[:time] %></div>
+            </div>
+            <div class="job_position"><%= job[:position] %></div>
+          </div>
+          <% end %>
     </div>
-    <div class="col-md-9 section_content">
-      <div class="skills">
-        <div class="skills_category">
-          <div class="skills_category_label">Languages</div>
-          <ul>
-            <li class="skills_category_item">Java</li>
-            <li class="skills_category_item">C++</li>
-            <li class="skills_category_item">JavaScript</li>
-            <li class="skills_category_item">Ruby</li>
-            <li class="skills_category_item">HTML</li>
-            <li class="skills_category_item">CSS/Sass</li>
-            <li class="skills_category_item">SQL</li>
-          </ul>
-        </div>
-        <div class="skills_category">
-          <div class="skills_category_label">Frameworks</div>
-          <ul>
-            <li class="skills_category_item">React</li>
-            <li class="skills_category_item">Ruby on Rails</li>
-            <li class="skills_category_item">Node</li>
-          </ul>
-        </div>
-        <div class="skills_category">
-          <div class="skills_category_label">Tools</div>
-          <ul>
-            <li class="skills_category_item">Bash</li>
-            <li class="skills_category_item">AWS</li>
-            <li class="skills_category_item">Git & Github</li>
-            <li class="skills_category_item">Chrome DevTools</li>
-            <li class="skills_category_item">Postman</li>
-          </ul>
-        </div>
-        <div class="skills_category">
-          <div class="skills_category_label">Design</div>
-          <ul>
-            <li class="skills_category_item">Sketch</li>
-            <li class="skills_category_item">Prototyping</li>
-            <li class="skills_category_item">Wireframing</li>
-            <li class="skills_category_item">User Testing</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-</div> %>
 
-<div class="section experience">
+    <a href="" target="_blank" class="arrow-link">View My Resume</a>
+  </div>
+</section>
+
+
+<!-- <div class="section experience">
   <div class="container">
     <div class="row">
       <div class="col-md-3 section_title">
@@ -200,4 +168,4 @@
     </div>
   </div>
 </div>
-
+ -->
