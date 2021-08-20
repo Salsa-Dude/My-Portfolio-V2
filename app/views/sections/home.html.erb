@@ -142,30 +142,37 @@
   </div>
 </section>
 
-
-<!-- <div class="section experience">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 section_title">
-        EXPERIENCE
-      </div>
-      <div class="col-md-9 section_content">
-        <div class="jobs">
-          <% for job in @jobs %>
-          <div class="job">
-            <div class="time-place">
-              <div class="job_company">
-                <a href="<%= job[:url] %>" target="_blank"><%= job[:company] %></a>
-              </div>
-              <div class="job_time"><%= job[:time] %></div>
-            </div>
-            <div class="job_position"><%= job[:position] %></div>
-          </div>
-          <% end %>
+<section class="section featured-projects">
+  <div class="section_title">Featured Projects</div>
+  <div class="section_content">
+    <div class="project blistabloc">
+      <figure class="project_pic">
+        <a href="https://skillhub-frontend.herokuapp.com/categories" target="_blank">
+          <%= image_tag("skillhub-project.png", :alt => "") %>
+        </a>
+      </figure>
+      <figcaption class="project_caption">
+        <div class="project_name">
+          <a href="https://blistabloc.com/" target="_blank">SkillHub</a>
         </div>
-        <a href="" target="_blank" class="arrow-link">View My Resume</a>
-      </div>
+        <p>SkillHub is a community platform where people can find local mentors in the DC area to meetup. Users can book a session, connect with mentors one-on-one, message mentors and other users and even teach a class of their own and become a mentor.</p>
+      </figcaption>
+    </div>
+
+    <div class="project interventions">
+      <figure class="project_pic">
+        <a href="" target="_blank">
+          <%= image_tag("tinyhome-project.png", :alt => "") %>
+        </a>
+      </figure>
+      <figcaption class="project_caption">
+        <div class="project_name">
+          <a href="" target="_blank">TinyHome</a>
+        </div>
+        <p>TinyHome is a online community marketplace for people to list, discover and book parking accommodations around the united states for their tiny home or van.</p>
+      </figcaption>
     </div>
   </div>
-</div>
- -->
+</section>
+
+
