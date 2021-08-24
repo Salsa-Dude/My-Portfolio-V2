@@ -55,7 +55,7 @@
   &_hello {
     font-weight: 300;
     .wave-hand {
-      background-image: url('wave.png');
+      // background-image: url('../../images/wave.png');
       margin-left: 10px;
       cursor: pointer;
 
@@ -99,7 +99,7 @@
       font-weight: 700;
     }
     .technologist {
-      background-image: url('technologist.png');
+      // background-image: url('technologist.png');
     }
   }
   &_contact {
@@ -110,7 +110,7 @@
     }
     .emoji {
       &.pointer {
-        background-image: url('pointright.png');
+        // background-image: url('pointright.png');
         width: 30px;
         height: 30px;
         margin: 0 5px;
