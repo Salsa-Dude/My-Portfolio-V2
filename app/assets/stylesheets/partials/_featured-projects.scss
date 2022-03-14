@@ -33,8 +33,10 @@
     // NIH OF TYPE (ODD)
     &:nth-of-type(odd) {
       .project-content {
+        .project-title {
+          text-align: right;
+        }
         grid-column: 8 / -1;
-        text-align: right;
         @media (max-width: 1080px) {
           grid-column: 5 / -1;
         }
@@ -132,7 +134,7 @@
         box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
         position: relative;
         z-index: 2;
-        padding: 10px;
+        padding: 10px 20px;
         border-radius: 4px;
         // background-color: #007bff;
         background-color: #e5f1ff;
